@@ -1,0 +1,19 @@
+{
+  "name": "Es6-in-practice",
+  "version": "1.0.0",
+  "main": "2.scope/Excersize2.js",
+  "repository": "git@github.com:izi-versano-sociomantic/Es6-in-practice.git",
+  "author": "izi.versano@sociomantic.com <izi.versano@sociomantic.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src",
+    "test": "eslint src"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.18.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0"
+  }
+}
