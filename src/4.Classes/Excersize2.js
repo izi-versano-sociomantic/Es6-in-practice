@@ -66,8 +66,8 @@ class PlayerCharacter extends Character {
 
 	faceDown()
     {
-		this.mx = 1;
-		this.my = 0;
+		this.mx =  0;
+		this.my = -1;
 	}
 
 	addToPoints()
