@@ -6,7 +6,7 @@ class Character {
 
 
 	set location( h )
-    {
+	{
 		this.x = Math.floor( Math.random() * h );
 		this.y = Math.floor( Math.random() * h );
 	}

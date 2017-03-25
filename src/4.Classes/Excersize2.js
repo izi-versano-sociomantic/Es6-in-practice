@@ -1,24 +1,26 @@
-class Character {
-	constructor( x, y ) {
+class Character
+{
+	constructor( x, y )
+	{
 		this.x = x;
 		this.y = y;
 
-        // players face right
+    // players face right
 		this.mx = 1;
 		this.my = 0;
 	}
 
 	location()
-    {
+	{
 		return { x: this.x, y: this.y };
 	}
 
 
 	move()
-    {
+	{
 		this.x += this.mx;
 		this.y += this.my;
-        // set borders
+		// set borders
 		if ( this.x < 0 )
 			this.x = 0;
 		if ( this.x > 9 )
@@ -30,84 +32,92 @@ class Character {
 	}
 }
 
-class PlayerCharacter extends Character {
-	constructor( x, y ) {
+class PlayerCharacter extends Character
+{
+	constructor( x, y )
+	{
 		super( x, y );
 		this.point = 0;
 	}
-	get location() {
+	get location()
+	{
 		return super.location();
 	}
 
 	set location( cord )
-    {
+	{
 		this.x = cord;
 		this.y = cord;
 	}
 
 	faceRight()
-    {
+	{
 		this.mx = 1;
 		this.my = 0;
 	}
 
 
 	faceTop()
-    {
+	{
 		this.mx = 0;
 		this.my = 1;
 	}
 
 	faceLeft()
-    {
+	{
 		this.mx = -1;
 		this.my = 0;
 	}
 
 	faceDown()
-    {
+	{
 		this.mx =  0;
 		this.my = -1;
 	}
 
 	addToPoints()
-    {
+	{
 		this.point += 1;
 	}
 
 }
 
-class NonPlayerCharacter extends Character {
-	constructor( x, y ) {
+class NonPlayerCharacter extends Character
+{
+	constructor( x, y )
+	{
 		super( x, y );
 	}
-	get location() {
+
+	get location()
+	{
 		return super.location();
 	}
 
 	set location( h )
-   {
+	{
 		this.x = Math.floor( Math.random() * h );
 		this.y = Math.floor( Math.random() * h );
 	}
 
-	faceRandom() {
+	faceRandom()
+	{
 		let face = Math.floor( Math.random() * 4 );
 
-        // face diffrent directions
+    // face diffrent directions
 		this.mx = [ 0, 0, -1, 1 ][ face ];
 		this.my = [ -1, 1, 0, 0 ][ face ];
 	}
 
 	meetWith( player )
-    {
+	{
 		console.log( ' this.location  ', this.location );
 		console.log( ' player.location ' , player.location );
 
 
 		if ( this.location.x == player.location.x  &&
-                  this.location.y == player.location.y )
-        {
+		this.location.y == player.location.y )
+		{
 			player.addToPoints();
 			console.log( 'player point :' +  player.point );
 		}
