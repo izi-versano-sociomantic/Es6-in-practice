@@ -2,11 +2,11 @@ let guessMe1 = 1;
 let guessMe2 = 2;
 {
 	try
-    {
+	{
 		console.log( guessMe1, guessMe2 ); // (A) wont console
 	}
 	catch ( _ )
-    {
+	{
 
 	}
 
