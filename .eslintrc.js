@@ -12,10 +12,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "indent": [ 0, 4 ],                 // 4 spaces, currently silent because of open brace indentation anomalies
         "linebreak-style": [
             "error",
             "unix"
