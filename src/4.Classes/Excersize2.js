@@ -104,7 +104,7 @@ class NonPlayerCharacter extends Character
 	{
 		let face = Math.floor( Math.random() * 4 );
 
-    // face diffrent directions
+		// face diffrent directions
 		this.mx = [ 0, 0, -1, 1 ][ face ];
 		this.my = [ -1, 1, 0, 0 ][ face ];
 	}
