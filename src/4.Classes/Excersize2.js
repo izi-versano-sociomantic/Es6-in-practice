@@ -5,7 +5,7 @@ class Character
 		this.x = x;
 		this.y = y;
 
-    // players face right
+		// players face right
 		this.mx = 1;
 		this.my = 0;
 	}
