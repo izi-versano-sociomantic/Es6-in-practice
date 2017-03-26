@@ -1,19 +1,21 @@
 class Character {
-	constructor( x, y ) {
-		this.x = x;
-		this.y = y;
-	}
+    constructor( x, y )
+    {
+        this.x = x;
+        this.y = y;
+    }
 
 
-	set location( h )
-	{
-		this.x = Math.floor( Math.random() * h );
-		this.y = Math.floor( Math.random() * h );
-	}
+    set location( h )
+    {
+        this.x = Math.floor( Math.random() * h );
+        this.y = Math.floor( Math.random() * h );
+    }
 
-	get location() {
-		return { x: this.x, y: this.y };
-	}
+    get location()
+    {
+        return { x : this.x, y : this.y };
+    }
 }
 
 class PlayerCharacter extends Character {}

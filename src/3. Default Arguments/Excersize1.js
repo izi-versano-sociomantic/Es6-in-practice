@@ -1,5 +1,5 @@
 function CounterES6( callback, delay = 1000 ) {
-	setTimeout( callback, delay );
+    setTimeout( callback, delay );
 }
 
 

@@ -1,31 +1,9 @@
-class Character {
-	constructor( x, y ) {
-		this.x = x;
-		this.y = y;
-	}
+let user = {
+    name        : 'Ashley',
+    email       : 'js@ss.com',
+    lessonsSeen : [ 2, 5, 6, 7, 9 ],
+    nextLesson  : 10
+};
+let { email, nextLesson } = user;
 
-
-	set location( h )
-    {
-		this.x = Math.floor( Math.random() * h );
-		this.y = Math.floor( Math.random() * h );
-	}
-
-	get location() {
-		return { x: this.x, y: this.y };
-	}
-}
-
-class PlayerCharacter extends Character {}
-
-class NonPlayerCharacter extends Character {}
-
-let playCharacter = new PlayerCharacter();
-let nonCharacter = new NonPlayerCharacter();
-
-playCharacter.location = 10;
-nonCharacter.location = 10;
-
-console.log( playCharacter.location );
-
-console.log( nonCharacter.location );
+console.log( nextLesson );
