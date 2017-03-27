@@ -7,7 +7,7 @@ function drawChart( data,
     days      = 30
 } = {} )
 {
-        // do not implement the function body
+    // do not implement the function body
     return bullColor ;
 }
 

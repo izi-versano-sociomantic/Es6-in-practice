@@ -1,9 +1,17 @@
-let user = {
-    name        : 'Ashley',
-    email       : 'js@ss.com',
-    lessonsSeen : [ 2, 5, 6, 7, 9 ],
-    nextLesson  : 10
-};
-let { email, nextLesson } = user;
 
-console.log( nextLesson );
+function drawChart( data,
+{
+    chartType = 0,
+    bullColor = 'green',
+    bearColor = 'red',
+    days      = 30
+} )
+{
+        // do not implement the function body
+    console.log( bullColor );
+}
+
+
+test( 'Combine objects and arrays' , () => {
+    expect( y ).toBe( 's' );
+} );
