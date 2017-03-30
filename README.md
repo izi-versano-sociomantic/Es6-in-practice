@@ -2,10 +2,10 @@
 Solutions to Excersizes from https://leanpub.com/es6-in-practice
 
 # Usage & Test:
-After cloning these
+After cloning
 
 
-   `cd es6-in-practice`
+   `cd es6-in-practice` run :
    `yarn test`
 
 
