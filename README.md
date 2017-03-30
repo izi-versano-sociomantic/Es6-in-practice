@@ -5,7 +5,7 @@ Solutions to Excersizes from https://leanpub.com/es6-in-practice
 After cloning
 
 
-   `cd es6-in-practice` run :
+   `cd Es6-in-practice` run :
    `yarn test`
 
 
