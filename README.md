@@ -2,7 +2,7 @@
 Solutions to Excersizes from https://leanpub.com/es6-in-practice
 
 # Usage & Test:
-After cloning
+After cloning :
 
 
    `cd Es6-in-practice` run :
