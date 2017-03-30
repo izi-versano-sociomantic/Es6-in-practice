@@ -1,6 +1,8 @@
 
 /*
-this one was a bit complicated, didnt think about the recurrsion at the begining then i went and implement it using es5:
+this one was a bit complicated,
+I didnt think about the recurrsion at the begining then
+i went and implement it using es5:
 
 function lcs( str1, str2 )
 {
@@ -33,9 +35,11 @@ function lcs( str1, str2 )
 
 console.log( lcs('aaa', 'aazz').length )
 
-    ***********
-    Evantualy i was looking at your solution , debug it and undrstood where i was wrong
- */
+******************************************
+Evantualy i was looking at your solution ,
+debug it and undrstood where i was wrong.
+
+*/
 
 
 const maxCommon = ( [ head1,...tail1 ], [ head2,...tail2 ], len = 0 ) => {
