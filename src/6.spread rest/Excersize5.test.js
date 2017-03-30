@@ -53,7 +53,7 @@ const maxCommon = ( [ head1,...tail1 ], [ head2,...tail2 ], len = 0 ) => {
 };
 
 
-describe( ' output incremented by 1 after each call ', () => {
+describe( 'Maximum common substring', () => {
     it( ' ', () => {
         expect( maxCommon( '123', '1' ) ) .toBe( 1 );
         expect( maxCommon( '11111', '11f111g' ) ) .toBe( 3 );
