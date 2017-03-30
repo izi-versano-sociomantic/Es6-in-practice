@@ -1,6 +1,6 @@
 
 /*
-this one was a bit complicated , didnt hink about the recurrsion at the begining then i went and implement it using es5 :
+this one was a bit complicated, didnt think about the recurrsion at the begining then i went and implement it using es5:
 
 function lcs( str1, str2 )
 {
