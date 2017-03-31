@@ -12,7 +12,7 @@ let A = f().map( f );
 
 
 
-describe( 'Shallow copy an array ', () => {
+describe( 'Spread Operator and Rest Parameters', () => {
     it( 'matches even if received contains additional elements', () => {
         expect( f() ).toEqual( expect.arrayContaining( [ '1','2','3','4','5' ] ) );
     } );
